@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+
+html,
+body {
+  /* height: 100%;
+  width: 100%; */
+  font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+.dark-mode {
+  background-color: #1b1919;
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  margin: 0 4px;
+  border: none;
+  background-color: #2f2f2f;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #1b1919;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px red;
+}
+
+.top-btn {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  margin: 0 4px;
+  border: none;
+  background-color: #9a9a9a;
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.top-btn:hover {
+  background-color: #575353;
+}
+
+.right-btn {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  margin: 0 4px;
+  border: none;
+  background-color: #ee9406;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.right-btn:hover {
+  background-color: #bb7a11;
+}
+::placeholder {
+  color: white;
+}
+
+.row {
+  margin: 8px 0;
+}
+.row input {
+  width: 316px;
+  font-size: 200%;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: 0;
+  padding: 10px 10px;
+  border: none;
+  text-align: right;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+.container {
+  background-color: black;
+  padding: 15px;
+  position: absolute;
+  border: solid rgb(0, 0, 0);
+  border-radius: 20px;
+  margin: 50px 450px;
+}
+
+/* DARK MODE CSS */
+
+#dark {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  margin: 10px 10px;
+  border: none;
+  /* background-color: #000000; */
+  background-image: url("noun-dark-mode-4066354-_1_.svg");
+  color: rgb(181, 128, 128);
+  background-position: center;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-display: none;
+}
+
+#dark:hover {
+  background-color: #bc7c7c;
+  scale: 1.1;
+  box-shadow: 1px 1px 10px black;
+}
