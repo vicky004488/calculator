@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="calculator-icon.png" type="image/x-icon" />
+    <link href="calculator.css" rel="stylesheet" type="text/css" />
+    <link href="utils.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script defer src="calc.js"></script>
+  </head>
+
+  <body onkeydown="myFunction(event)">
+    <div class="flex flex-col items-left">
+      <button id="dark" class="light_icon" onclick="dark(),darkiocn()"></button>
+    </div>
+
+    <div class="container calc flex flex-col items-center">
+      <h1 class="text-center">Calculator</h1>
+      <div class="row">
+        <input class="input" type="text" placeholder="0" readonly />
+      </div>
+      <div class="row">
+        <button class="button top-btn" onclick="clr()">AC</button>
+        <button class="button top-btn" onclick="back()">⬅️</button>
+        <button class="button top-btn" onclick="dis('%')">%</button>
+        <button class="button right-btn" onclick="dis('/')">÷</button>
+      </div>
+      <div class="row">
+        <button class="button" onclick="dis('7')">7</button>
+        <button class="button" onclick="dis('8')">8</button>
+        <button class="button" onclick="dis('9')">9</button>
+        <button class="button right-btn" onclick="dis('*')">X</button>
+      </div>
+      <div class="row">
+        <button class="button" onclick="dis('4')">4</button>
+        <button class="button" onclick="dis('5')">5</button>
+        <button class="button" onclick="dis('6')">6</button>
+        <button class="button right-btn" onclick="dis('-')">-</button>
+      </div>
+      <div class="row">
+        <button class="button" onclick="dis('1')">1</button>
+        <button class="button" onclick="dis('2')">2</button>
+        <button class="button" onclick="dis('3')">3</button>
+        <button class="button right-btn" onclick="dis('+')">+</button>
+      </div>
+      <div class="row">
+        <button class="button" onclick="dis('0')">0</button>
+        <button class="button" onclick="dis('00')">00</button>
+        <button class="button" onclick="dis('.')">.</button>
+        <button class="button right-btn" onclick="solve()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
